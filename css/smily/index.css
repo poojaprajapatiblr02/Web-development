@@ -1,0 +1,35 @@
+.face{
+    height:400px;
+    width:400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.leye{
+    height:40px;
+    width:40px;
+    background-color: black;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    border-radius: 50%;
+}
+.reye{
+    height:40px;
+    width:40px;
+    background-color: black;
+    position: relative;
+    left: 250px;
+    top: 60px;
+    border-radius: 50%;
+}
+.lips{
+    height:70px;
+    width:200px;
+    background-color: red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 150px;
+    
+}

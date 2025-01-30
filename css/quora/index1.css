@@ -1,0 +1,72 @@
+/*universal selector*/
+*{
+    font-family:'Courier New';
+}
+/*element selector*/
+h3{
+    color:#b92b27;
+}
+h1{
+color:#b92b27;
+}
+/*class selector*/
+#login{
+    background-color:rgb(255,255,255);
+}
+#signup{
+    background-color:#b92b27;
+    color:#fff
+}
+/*id selector*/
+.upvote{
+    background-color:green;
+    color:aliceblue;
+}
+/*descendant selector*/
+p a{
+    color:purple;
+    background-color: yellow;
+}
+/*adjacent sibling combinators*/
+p+h3{
+    text-decoration:underline;
+}
+.upvote + button{
+    background-color: cornflowerblue;
+}
+/*child combinators*/
+div>input{
+    background-color: darkgray;
+}
+div[id="myId"] p{
+    background-color: green;
+}
+button:hover{
+    background-color:black;
+    color:white
+}
+h3:hover{
+    text-decoration:none
+}
+button:active{
+    background-color:blue;
+}
+p:active{
+    font-weight: bold;
+    color:green
+}
+input[type="radio"]:checked+label{
+    color:red
+}
+div:nth-of-type(2n){
+    background-color:yellow;
+}
+h1::first-letter{
+    color:green;
+}
+p::first-line{
+    color:blue;
+}
+p::selection{
+    background-color:yellow
+}
