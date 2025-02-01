@@ -1,0 +1,71 @@
+.container{
+    width:300px;
+    height:100px;
+    margin:auto;
+    text-align: center;
+    line-height: 100px;
+    background-color:pink;
+    animation-name:mymove;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+    animation-delay:2s;
+    /* animation: mymove 5s infinite alternate ease-in-out 2s forwards running; */
+}
+ @keyframes  mymove {
+    0% {background-color: pink;
+    width: 300px;
+    height: 100px;}
+    50% {background-color: green;
+    width: 200px;
+    height: 200px;
+border-radius: 50%;}
+    100% {background-color: yellow;
+    width: 100px;
+    height: 300px;
+border-radius: 15px;}
+ }
+
+ @keyframes smily{
+    0%{border-radius: 0%;}
+    100%{border-radius: 50%;}
+ }
+
+ .face{
+    height:400px;
+    width:400px;
+    background-color: yellow;
+    animation: smily 5s infinite alternate ease-in-out 2s forwards running;
+    margin:auto
+    /* border-radius: 50%; */
+}
+.leye{
+    height:40px;
+    width:40px;
+    background-color: black;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    border-radius: 50%;
+}
+.reye{
+    height:40px;
+    width:40px;
+    background-color: black;
+    position: relative;
+    left: 250px;
+    top: 60px;
+    border-radius: 50%;
+}
+.lips{
+    height:70px;
+    width:200px;
+    background-color: red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 150px;
+    
+}
