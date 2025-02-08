@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar  bg-primary fixed-top navbar-expand-lg" data-bs-theme="light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </nav>
+  <div class="container">
+    <br>
+    <br>
+    <h2>Bootstrap</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero illo repellendus. Doloremque corrupti
+      eveniet incidunt necessitatibus ex fuga deserunt ad dolore facilis, pariatur excepturi, praesentium iusto at
+      ducimus. Quae.
+      Voluptas, ut nihil. Repellendus quam porro laborum provident, voluptas ex natus possimus blanditiis. Minima, omnis
+      amet, neque ipsam voluptatem distinctio iste et provident deserunt atque obcaecati, possimus iure saepe. Ut.
+      Praesentium et veritatis illo beatae, consectetur nostrum repellat error inventore accusamus nihil asperiores
+      quae,
+      ut recusandae magnam vel ad itaque exercitationem nam voluptas doloribus minus minima! Facilis odio earum
+      nesciunt.
+      Eveniet eligendi atque ex, quas, voluptas vero perferendis laudantium dolore nulla debitis, nihil animi? Tenetur
+      expedita cupiditate nesciunt accusamus ratione earum corrupti modi consequatur architecto, placeat fugit pariatur
+      libero optio.
+      Fuga reiciendis quas optio veniam eligendi. Nulla, facilis quisquam officia quam fuga amet eos vel, rem dolorum
+      earum, reiciendis doloribus architecto voluptates aspernatur in quae temporibus! Quasi amet porro asperiores.</p>
+ 
+
+  <hr>
+  <hr>
+  <h1>Button Component</h1>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success btn-lg">Success</button>
+  <button type="button" class="btn btn-danger btn-sm">Danger</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-light">Light</button>
+  <button type="button" class="btn btn-dark">Dark</button>
+  <button type="button" class="btn btn-link">Link</button>
+  <a href="www.google.com" class="btn btn-primary">Google Me!</a>
+
+  <hr>
+  <hr>
+  <h1>Badge Component</h1>
+  <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+  <h2>Example heading <span class="badge text-bg-primary">New</span></h2>
+  <h3>Example heading <span class="badge rounded-pill text-bg-danger">New</span></h3>
+  <h4>Example heading <span class="badge rounded-pill text-bg-dark">New</span></h4>
+  <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+  <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
+  <br>
+  <button type="button" class="btn btn-primary">
+    Notifications <span class="badge text-bg-warning">4</span>
+  </button>
+  <br>
+  <br>
+  <button type="button" class="btn btn-primary position-relative">
+    Inbox
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+
+  <hr>
+  <hr>
+  <h1>Alerts Component</h1>
+  <div class="alert alert-danger" role="alert">
+    Download Failed! Try again later.
+  </div>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    Congratulations! You have successfully registered.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
+
+
+  <hr>
+  <hr>
+  <h1>Button Group</h1>
+  <button class="btn btn-success"> Button1 </button>
+  <button class="btn btn-success"> Button2 </button>
+  <button class="btn btn-success"> Button3 </button>
+  <div class="btn-group">
+    <button class="btn btn-success"> Button1 </button>
+    <button class="btn btn-success"> Button2 </button>
+    <button class="btn btn-success"> Button3 </button>
+  </div>
+
+  <hr>
+  <hr>
+  <h1>Navbar (on the header)</h1>
+
+  <hr>
+  <hr>
+  <h1>Card Component</h1>
+  <div class="card" style="width: 18rem;">
+    <img src="https://www.visa.co.in/dam/VCOM/regional/ap/india/global-elements/images/in-visa-gold-card-498x280.png"
+      class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">A visa card</h5>
+      <p class="card-text">Use it to make payments anywhere.</p>
+      <a href="#" class="btn btn-primary">Know More</a>
+    </div>
+  </div>
+
+  <hr>
+  <hr>
+  <h1>Grid Layout - works on 12 column system - built with flexbox</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col bg-success">one</div>
+      <div class="col bg-danger">two</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2 bg-primary">one</div>
+      <div class="col-7 bg-warning">two</div>
+      <div class="col-3 bg-info">three</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4 bg-primary">one</div>
+      <div class="col-md-4 bg-warning">two</div>
+      <div class="col-md-4 bg-info">three</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6 col-xl-4 bg-success">here till the screen size is md 100% of the row area will be occupied
+      </div>
+      <div class="col-md-6 col-xl-4 bg-danger">Above medium size till xl size 50% of the screen will be occupied</div>
+      <div class="col-md-6 col-xl-4 bg-warning">above xl 1/3rd i.e 4 columns will be occupied</div>
+    </div>
+    <br>
+    <div class="row align-items-end">
+      <div class="col-4 bg-primary align-self-center">vertical alignment</div>
+      <div class="col-4 bg-warning ">vertical alignment done along cross axis. for all the items->
+        align-items-center/start/end is used || to do the alignment of a single item align-self-center/start/end is
+        used.</div>
+      <div class="col-4 bg-info">Vertical alignment is present under columns section in layouts of bootstrap</div>
+    </div>
+</div>
+    <hr>
+    <hr>
+    <h1>Forms</h1>
+    <h2>Form Controls/ Layout also included</h2>
+    <form>
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="password">Password</label>
+          <input type="email" class="form-control" id="password" placeholder="password">
+        </div>
+      </div>
+      
+      <div class="mb-3" >
+        <label class="form-label" for="address">Address</label>
+        <input type="Address" class="form-control form-control-lg" id="address" placeholder="address">
+      </div>
+      <br>
+      <h2>Select</h2>
+      <div class="mb-3">
+      <select class="form-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <br>
+    <h2>Checkbox and Radio</h2>
+    <div class="mb-3 normal">
+      <input type="checkbox"  id="exampleCheck1">
+      <label  for="exampleCheck1">Normal checkbox</label>
+    </div>
+      
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+      <label class="form-check-label" for="exampleCheck2">checkbox using bootstrap</label>
+    </div>
+
+    <div class="mb-3 normal">
+      <input type="radio"  id="exampleradio1">
+      <label  for="exampleradio1">Normal Radio</label>
+    </div>
+      
+    <div class="mb-3 form-check">
+      <input type="radio" class="form-check-input" id="example">
+      <label class="form-check-label" for="example">radio using bootstrap</label>
+    </div>
+    <br>
+    <div class="form-check mb-3 form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+    </div>
+    </form>
+
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+
+</html>
