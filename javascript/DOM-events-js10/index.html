@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onClick="alert('Button was clicked');">Click Me!</button>  <!--inline dom event handling-->
+    <button onClick="console.log('Button was clicked');">Click Me!</button>
+    <button onClick="document.write('Button was clicked');">Click Me!</button>
+    <button class="btn">Click Me!</button>
+
+    <br>
+    <br>
+
+    <button class="like">Like Me 1!</button>
+    <button class="like">Like Me 2!</button>
+    <button class="like">Like Me 3!</button>
+    <button class="like">Like Me 4!</button>
+    <button class="like">Like Me 5!</button>
+
+    <br>
+    <br>
+
+    <button onmouseenter="alert('you disliked')">Dislike Me 1!</button>
+    <button class="dislike">Dislike Me 2!</button>
+
+    <br>
+    <br>
+    
+    <button class="hi">Click me to say Hi!</button>
+
+    <br>
+    <br>
+
+    <p>This is a paragraph</p>   <!--not only buttons, event listeners can be added to any elements-->
+    <div class="box"></div>
+
+    <br>
+    <br>
+
+    <button class="th">Click Me!</button>
+
+    <br>
+    <br>
+
+    <h1 class="item">Use of 'this' in event listeners</h1>
+    <h3 class="item">Lets demo it on elements</h3>
+    <h6 class="item">this is a sample paragraph</h6>
+    <button class="item">Click Me!</button>
+
+    <br>
+    <br>
+
+    <button class="event">Click Me!</button>
+
+    <br>
+    <br>
+
+    <!--Keyboard Events-->
+    <p>keyboard events</p>
+    <input type="text" class="input" placeholder="Type here">
+    <button class="key">Click Me!</button>
+
+    <br>
+    <br>
+
+    <!--Form events-->
+    <form action="/action">
+        <p>form events</p>
+        <input type="text"  placeholder="Type here">
+        <button class="submit">Submit</button>
+    </form>
+
+    <form class="form1" action="/action">
+        <p>Extracting form data</p>
+        <input type="text" id="un" placeholder="username">
+        <input type="password" id="pw" placeholder="password">
+        <button class="submit">Submit</button>
+    </form>
+    
+    <!--custom text editor-->
+    <h1>My custom text editor</h1>
+    <p id="edit"></p>
+    <input type="text" id="editor" placeholder="Type here">
+
+
+    <script src="index.js"></script>
+ 
+</body>
+</html>
