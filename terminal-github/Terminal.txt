@@ -1,0 +1,69 @@
+Terminal - it is a text input and output environment
+
+
+Basic Commands
+1. ls - lists all the files
+2. pwd - present working directory (shows the current folder/directory I am in)
+3. clear - clears the terminal screen
+
+
+Navigation
+to move inside and outside directories
+cd - change directory
+1. cd desktop - move into desktop
+2. cd .. - move out of the current directory (back button)
+3. cd desktop/folder1 - navigate more than on step
+4. cd ../.. - to move out of 2 steps
+
+
+Paths
+Paths can either be relative or absolute 
+can move from anywhere to anywhere using absolute paths
+relative paths should be relative to the current directory we are present in
+Absolute paths always begin with /
+/ - represents root directory
+~ - represents home directory
+cd ~ - to move to home directory
+cd / - to move to root directory 
+Root directory consists of all profiles on the system
+home directory takes to the current profile
+
+
+Making Directory
+mkdir - make directory
+Eg.  mkdir newDir
+     mkdir desktop/folder1/newDir2    //can make directories using paths also
+
+
+Flags
+Flags are characters that we pass with commands to modify their behavior
+eg.  ls -l ->lists information about files or directories within the file system
+     ls -a ->shows hidden files (files that begin with . like .env)
+
+
+Manual command
+This gives the manual or information about any command
+Adding man before any command gives its entire manual
+Eg. man ls -> gives information about ls command
+    man mkdir -> gives information about mkdir command
+
+
+Touch command 
+used to create new files in our directory
+Eg. touch index.html
+The main work of touch command is to change file access and modification times
+If any file does not exist, it is created with default permissions
+
+
+Deleting files and folders
+rm -> remove files
+rmdir -> removes emtpty folders
+rm -rf -> removes any folders( rf here means recursive force- recursively go inside folders and delete)
+rm commands are extremely sensitive, files and folders deleted through this command cannot be restored.
+
+
+
+
+
+
+
