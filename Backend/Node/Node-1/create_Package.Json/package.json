@@ -1,0 +1,15 @@
+{
+  "name": "create_package.json",
+  "version": "1.0.0",
+  "description": "This is a demo project, to learn how to create package.json for my custom projects. I created this using npm init",
+  "license": "ISC",
+  "author": "Pooja",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1"
+  }
+}
