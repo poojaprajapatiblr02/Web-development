@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice</title>
+</head>
+<body>
+    <h1>Rolling the dice-generating data directly in ejs file</h1>
+    <h2>Roll the Dice : <%=Math.floor(Math.random() *6)+1%></h2>   <!--generating the data directly here-->
+    <h1>Rolling the dice -Passing data to Ejs</h1>
+    <h2>Roll the Dice : <%=dice%></h2> <!--dice is passed from the index.js file while rendering the template-->
+    
+    <!--conditonal statements in ejs. condtional statements are written in the tag <% %>-->
+    <% if(dice == 6) { %>
+        <h2>Yay! You rolled a 6!</h2>
+        <h2>Roll dice again</h2>
+    <% } %>
+
+</body>
+</html>

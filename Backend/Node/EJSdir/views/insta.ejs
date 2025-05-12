@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta</title>
+    <!--adding style directly in the file-->
+    <!-- <style>
+        img{
+            height:100px;
+            width:100px;
+        }
+    </style> -->
+    <!-- adding style from external file- serving static files(statis files include boh=th css and js)-->
+    <!--static files are stored in public folder by default,public folder is already app.used in index.js file. hence no need to mention its path-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Welcome to the home page of @<%=data.name %> </h1>   <!-- in data.json file username is stored in the name object -->
+    <button>Follow</button>
+    <button>Message</button>
+    <p>
+        Followers : <%= data.followers %> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Following : <%= data.following %>
+    </p>
+    <hr />
+    <% for (let post of data.posts) { %>
+        <img src="<%=post.image%>" alt="some image" />
+         <p>
+        Likes : <%= post.likes %> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Comments : <%= post.comments %>
+    </p>
+    <% } %>
+    <%- include("includes/footer.ejs")%>
+    <!--serving static files-->
+    <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+  
+    <h1>This is the home page</h1>
+    <h2>Interpolating Syntax</h2>
+    <!--Interpolating Syntax (embedds expressions into html -makes ejs dynamic )-->
+   
+    <!--Done using tags -->
+    <!-- The following tag outputs the value into the template(html escaped-the outpud is always in the form of a string) -->
+    <h3>Tag to output the value into the template</h3>
+    <%=1+2%>
+    <p>1+2</p>  <!--without the tag the epression is printed as it is-->
+    <%= name %>   <!--name defined in index.js while rendering the template-->
+    <%= name.toUpperCase() %> <!--name is converted to upper case using the method toUpperCase()-->
+    <%=["hello","world"][1]%> <!--this is a javascript expression and it will be evaluated and the result will be printed i.e the the element at index 1 of the array-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo veniam, eveniet molestias, mollitia optio animi harum eaque aspernatur sint quos illum accusamus commodi consectetur neque, quis placeat nisi. Excepturi!</p>
+    <button>click me!</button>
+</body>
+</html>
