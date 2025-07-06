@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and POST request</title>
+</head>
+<body>
+    <!--In get request the data is sent as query string in the URL. this has limited length and is visible in the url. the data is converted into string-->
+    <!--in the below form when clicked on submit the url will be  file:///E:/register?user=pooja&password=abc-->
+    <h3>GET request form</h3>
+    <!-- <form method="get" action="/register"> -->
+    <form method="get" action="http://localhost:8080/register">   <!--because the form is in our local system it is using file protocol . our server is  sending data through http protocol so to use http we have to exclusively mention http and complete url--> 
+    <input placeholder="Enter name" name="user" type="text" />
+    <input placeholder="enter password" name="password" type="password" />
+    <button>submit</button>
+   </form> 
+   <hr>
+    <!--In post request the data is sent in the body of the request. this has no length limit and is not visible in the url. the data is converted into string-->
+    <!--in the below form when clicked on submit the url will be  file:///E:/register-->
+   <h3>POST Request form</h3>
+   <!-- <form method="post" action="/register"> -->
+    <form method="post" action="http://localhost:8080/register">
+    <input placeholder="Enter name" name="user" type="text" />
+    <input placeholder="enter password" name="password" type="password" />
+    <button>submit</button>
+   </form>
+
+   <script src="app.js"></script>
+</body>
+
+</html>
