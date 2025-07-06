@@ -1,0 +1,14 @@
+creating  a simple Quora application
+
+to create, edit, read , delete posts
+
+steps:
+npm init -y
+npm i express
+npm i ejs
+create file index.js aquire express and set up the server
+create folders views and public
+create file views/index.ejs with html code . render this page in the index.js file i.e server side code
+create file views/post.ejs with html code to create a post(that s create post form) and soo on
+
+npm i uuid -> (Universally unique identifier) this is for generating unique id for each posts
