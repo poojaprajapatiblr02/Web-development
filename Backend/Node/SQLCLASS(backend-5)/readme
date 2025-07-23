@@ -1,0 +1,39 @@
+Node with SQL 
+
+npm init
+
+install faker package(faker package is for installing fake data)
+npm i @faker-js/faker
+create fake data using a function(here getRandomUser) as written in index.js
+
+install package mysql2(to connect server with db)
+npm install --save mysql2
+(mysql package might give authentication issues so for ease of use we are using mysql2 package)
+access the database by creating connection to the db as written in index.js
+
+
+method to access db directly through CLI/terminal
+>"C:\Program Files\MariaDB 11.7\bin\mysql.exe" -u root -p
+>pw:root
+>use delta_app     (db name)
+>run sql querries   (or)
+>run sql files using command  source <filename.sql>  Eg.
+>source schema.sql
+
+
+install express
+npm i express
+
+install uuid (for generating ids when a new user is created)
+npm i uuid
+
+setup express in index.js
+
+for templating install ejs
+npm i ejs
+
+setup the routes one by one
+
+we cannot directly define patch request (for edit action)
+install method-override for patch request
+npm i method-override
